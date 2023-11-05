@@ -44,7 +44,7 @@
                 </div>
                 <ul class="py-2" aria-labelledby="user-menu-button">
                     <li>
-                        <a href="eduardo_lpsw-1/logout"
+                        <a href="/eduardo_lpsw-1/logout"
                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-500 ">Cerrar sesión</a>
                     </li>
 
@@ -64,25 +64,25 @@
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
             <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
                     <li>
-                        <a href="home"
+                        <a href="/eduardo_lpsw-1/home"
                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0">Inicio</a>
                     </li>
                     <li>
-                        <a href="health"
+                        <a href="/eduardo_lpsw-1/health"
                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0">Salud</a>
                     </li>
                     <li>
-                        <a href="news"
+                        <a href="/eduardo_lpsw-1/news"
                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0">Noticias</a>
                     </li>
                     <li>
-                        <a href="clients"
+                        <a href="/eduardo_lpsw-1/clients"
                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0">Clientes</a>
                     </li>
 
                     <sec:authorize access="hasRole('ROLE_PATIENT')">
                         <li>
-                            <a href="doctors"
+                            <a href="/eduardo_lpsw-1/doctors"
                                class="block py-2 pl-3 pr-4 <%= currentURL.endsWith("doctors.jsp") ? "text-teal-300" : "text-gray-900" %> rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0">Doctores</a>
                         </li>
                     </sec:authorize>
@@ -90,29 +90,29 @@
                     <sec:authorize access="not hasRole('ROLE_ADMIN')">
 
                         <li>
-                            <a href="medicines"
+                            <a href="/eduardo_lpsw-1/medicines"
                                class="block py-2 pl-3 pr-4 <%= currentURL.endsWith("medicines.jsp") ? "text-teal-300" : "text-gray-900" %> rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0">Medicinas</a>
                         </li>
                         <li>
-                            <a href="user_cart"
+                            <a href="/eduardo_lpsw-1/user_cart"
                                class="block py-2 pl-3 pr-4 <%= currentURL.endsWith("cart.jsp") ? "text-teal-300" : "text-gray-900" %>  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0 ">Carrito</a>
                         </li>
                     </sec:authorize>
 
                     <sec:authorize access="hasRole('ROLE_ADMIN')">
                         <li>
-                            <a href="dashboard"
+                            <a href="/eduardo_lpsw-1/dashboard"
                                class="block py-2 pl-3 pr-4 <%= currentURL.endsWith("dashboard.jsp") ? "text-teal-300" : "text-gray-900" %>  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0 ">Dashboard</a>
                         </li>
                     </sec:authorize>
 
                     <sec:authorize access="hasRole('ROLE_DOCTOR')">
                         <li>
-                            <a href="appointments"
+                            <a href="/eduardo_lpsw-1/appointments"
                                class="block py-2 pl-3 pr-4 <%= currentURL.endsWith("appointments.jsp") ? "text-teal-300" : "text-gray-900" %>  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0 ">Citas</a>
                         </li>
                         <li>
-                            <a href="my_schedules_doctor"
+                            <a href="/eduardo_lpsw-1/my_schedules_doctor"
                                class="block py-2 pl-3 pr-4 <%= currentURL.endsWith("main.jsp") ? "text-teal-300" : "text-gray-900" %>  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0 ">Mis horarios</a>
                         </li>
                     </sec:authorize>

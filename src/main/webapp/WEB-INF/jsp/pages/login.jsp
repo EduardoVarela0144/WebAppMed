@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Inicio de sesi�n</title>
+    <title>Inicio de sesión</title>
     <jsp:include page="../components/general/template_styles.jsp"/>
 </head>
 <body>
@@ -30,14 +30,14 @@
 
             <div class="col-md-12" id="login">
                 <div class="contact_box">
-                    <h1 class="book_text">Inicio de sesi�n</h1>
+                    <h1 class="book_text">Inicio de sesión</h1>
                     <form:form action="login" method="post">
-                        <input class="Email_text" type="email" name="username" placeholder="Correo electr�nico" required>
-                        <input class="Email_text" type="password" name="password" placeholder="Contrase�a" required>
+                        <input class="Email_text" type="email" name="username" placeholder="Correo electrónico" required>
+                        <input class="Email_text" type="password" name="password" placeholder="Contraseña" required>
                         <div class="send_bt">
                             <a style="color: white; width: 100%; height: 100%">
                                 <button style="background-color: transparent; color: white; width: 100%; height: 100%"
-                                        type="submit">Iniciar sesi�n
+                                        type="submit">Iniciar sesión
                                 </button>
                             </a>
                         </div>

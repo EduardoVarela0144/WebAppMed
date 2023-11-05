@@ -20,12 +20,12 @@
 
         <div class="container mt-4 p-4">
             <div class="flex items-center justify-between">
-                <h1>Mis citas M�dicas</h1>
+                <h1>Mis citas Médicas</h1>
             </div>
 
             <c:choose>
                 <c:when test="${empty listAppointments}">
-                    <p>No hay citas m�dicas registradas.</p>
+                    <p>No hay citas médicas registradas.</p>
                 </c:when>
                 <c:otherwise>
                     <div class="row">
