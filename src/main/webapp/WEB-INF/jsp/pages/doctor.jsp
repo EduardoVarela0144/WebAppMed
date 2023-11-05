@@ -29,8 +29,8 @@
                     <p>Nombre del doctor: ${doctor.name}</p>
                     <p>Apellido Paterno: ${doctor.ape_pat}</p>
                     <p>Apellido Materno: ${doctor.ape_mat}</p>
-                    <p>Dirección de la clínica: ${doctor.id_doctor.clinic_address}</p>
-                    <p>Número de la clínica: ${doctor.id_doctor.clinic_number}</p>
+                    <p>DirecciÃ³n de la clÃ­nica: ${doctor.id_doctor.clinic_address}</p>
+                    <p>NÃºmero de la clÃ­nica: ${doctor.id_doctor.clinic_number}</p>
                     <p>Especialidad: ${doctor.id_doctor.specialties.name}</p>
                     <p>Costo de la consulta: ${doctor.id_doctor.cost}</p>
                 </div>
@@ -48,7 +48,7 @@
                                 <c:forEach var="schedule" items="${listSchedules}" >
 
                                     <%--@elvariable id="appointment" type=""--%>
-                                    <form:form class="col-md-4" action="/saveAppointmentFromClient" method="post" modelAttribute="appointment">
+                                    <form:form class="col-md-4" action="/eduardo_lpsw-1/saveAppointmentFromClient" method="post" modelAttribute="appointment">
                                             <div class="card mb-4">
                                                     <div class="card-body">
                                                         <form:hidden path="id_doctor"  value="${doctor.id_user}" />

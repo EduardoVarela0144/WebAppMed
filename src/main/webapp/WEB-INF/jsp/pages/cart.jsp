@@ -19,12 +19,12 @@
             <div class="flex-col">
                 <c:choose>
                     <c:when test="${empty listCart}">
-                        <p>El carrito de compras est· vacÌo.</p>
+                        <p>El carrito de compras est√° vac√≠o.</p>
                     </c:when>
                     <c:otherwise>
                         <div class="justify-between flex  w-full">
                             <h3 class="font-bold text-2xl">Total del carrito: $ ${total} MXN </h3>
-                            <form action="/cleanCart/${id_cart}"
+                            <form action="cleanCart/${id_cart}"
                                   method="post">
                                 <button type="submit" class="bg-black text-white px-4 py-2">
                                     Pagar

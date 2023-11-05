@@ -119,7 +119,7 @@
 
                     <sec:authorize access="hasRole('ROLE_PATIENT')">
                         <li>
-                            <a href="my_appointments"
+                            <a href="<%=request.getContextPath()%>/my_appointments"
                                class="block py-2 pl-3 pr-4 <%= currentURL.endsWith("my_patient_appointments.jsp") ? "text-teal-300" : "text-gray-900" %>  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0 ">Mis
                                 citas</a>
                         </li>

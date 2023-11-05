@@ -77,7 +77,7 @@
 
                 <sec:authorize access="hasRole('ROLE_PATIENT')">
                     <li class="nav-item <%= currentURL.endsWith("my_patient_appointments.jsp") ? "active" : "" %>">
-                        <a class="nav-link" href="my_appointments">Mis citas</a>
+                        <a class="nav-link" href="<%=request.getContextPath()%>/my_appointments">Mis citas</a>
                     </li>
                 </sec:authorize>
 

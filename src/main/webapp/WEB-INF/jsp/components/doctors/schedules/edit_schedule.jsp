@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%--@elvariable id="schedule" type=""--%>
-<form:form action="/saveScheduleDoctor" method="post" modelAttribute="schedule" id="drawer-update-product"
+<form:form action="saveScheduleDoctor" method="post" modelAttribute="schedule" id="drawer-update-product"
            class="fixed top-0 left-0 z-40 w-full h-screen max-w-3xl p-4 overflow-y-auto transition-transform -translate-x-full bg-white"
            tabindex="-1" aria-labelledby="drawer-update-product-label" aria-hidden="false">
     <h5 id="drawer-label"
