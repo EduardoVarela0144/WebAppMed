@@ -4,5 +4,5 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim
 COPY --from=build /target/eduardo_lpsw-1.jar demo.jar
-EXPOSE 8080
+EXPOSE 9292
 ENTRYPOINT ["java","-jar","demo.jar"]
