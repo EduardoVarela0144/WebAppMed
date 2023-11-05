@@ -9,11 +9,14 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ProductService {
     @Autowired
     IProductRepository productRepo;
+    @Autowired
+    ICartProductsRepository cartProductsRepository;
 
     public List<Product> getAllProducts(){
         List<Product> catList = new ArrayList<Product>();
@@ -39,6 +42,7 @@ public class ProductService {
     }
 
     public boolean deleteProduct(Integer id) {
+        cartProductsRepository.deleteByProduct(productRepo.findById(id));
         productRepo.deleteById(id);
         if (productRepo.findById(id) != null) {
             return true;

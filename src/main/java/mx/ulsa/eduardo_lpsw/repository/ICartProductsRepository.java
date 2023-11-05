@@ -3,6 +3,7 @@ package mx.ulsa.eduardo_lpsw.repository;
 import jakarta.transaction.Transactional;
 import mx.ulsa.eduardo_lpsw.models.Cart;
 import mx.ulsa.eduardo_lpsw.models.CartElements;
+import mx.ulsa.eduardo_lpsw.models.Product;
 import mx.ulsa.eduardo_lpsw.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -18,6 +19,9 @@ public interface ICartProductsRepository extends JpaRepository<CartElements, Int
 
     @Transactional
     void deleteByCart(Optional<Cart> cart);
+
+    @Transactional
+    void deleteByProduct(Optional<Product> product);
 
 
 

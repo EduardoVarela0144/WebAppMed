@@ -16,7 +16,7 @@ public class CartElements {
 
     @ManyToOne
     @JoinColumn(name = "id_product")
-    private Product id_product;
+    private Product product;
 
     @Column(name = "unitary_price")
     private Float unitary_price;
@@ -27,7 +27,7 @@ public class CartElements {
     public CartElements(Integer id_cart_elements, Cart cart, Product id_product, Float unitary_price, Integer quantity) {
         this.id_cart_elements = id_cart_elements;
         this.cart= cart;
-        this.id_product = id_product;
+        this.product = id_product;
         this.unitary_price = unitary_price;
         this.quantity = quantity;
     }
@@ -51,16 +51,16 @@ public class CartElements {
     }
 
     public Product getProduct() {
-        return id_product;
+        return product;
     }
 
 
     public Product getId_product() {
-        return id_product;
+        return product;
     }
 
     public void setId_product(Product id_product) {
-        this.id_product = id_product;
+        this.product = id_product;
     }
 
     public Float getUnitary_price() {
@@ -84,7 +84,7 @@ public class CartElements {
         return "CartElements{" +
                 "id_cart_elements=" + id_cart_elements +
                 ", cart=" + cart +
-                ", id_product=" + id_product +
+                ", id_product=" + product +
                 ", unitary_price=" + unitary_price +
                 ", quantity=" + quantity +
                 '}';
