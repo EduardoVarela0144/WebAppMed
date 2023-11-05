@@ -77,11 +77,11 @@ public class SpringSecurityConfig {
                                 Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
                                 for (GrantedAuthority authority : authorities) {
                                     if (authority.getAuthority().equals("ROLE_ADMIN")) {
-                                        response.sendRedirect("/dashboard");
+                                        response.sendRedirect("dashboard");
                                     } else if (authority.getAuthority().equals("ROLE_DOCTOR")) {
-                                        response.sendRedirect("/appointments");
+                                        response.sendRedirect("appointments");
                                     } else if (authority.getAuthority().equals("ROLE_PATIENT")){
-                                        response.sendRedirect("/doctors");
+                                        response.sendRedirect("doctors");
 
                                     }
                                 }

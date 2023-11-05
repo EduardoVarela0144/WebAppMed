@@ -31,7 +31,7 @@
             <div class="col-md-12" id="login">
                 <div class="contact_box">
                     <h1 class="book_text">Inicio de sesión</h1>
-                    <form:form action="/login" method="post">
+                    <form:form action="login" method="post">
                         <input class="Email_text" type="email" name="username" placeholder="Correo electrónico" required>
                         <input class="Email_text" type="password" name="password" placeholder="Contraseña" required>
                         <div class="send_bt">

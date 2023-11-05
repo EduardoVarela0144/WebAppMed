@@ -2,7 +2,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 <%--@elvariable id="product" type=""--%>
-<form:form action="/saveProduct?page=products" method="post" modelAttribute="product" id="drawer-update-product"
+<form:form action="saveProduct?page=products" method="post" modelAttribute="product" id="drawer-update-product"
            class="fixed top-0 left-0 z-40 w-full h-screen max-w-3xl p-4 overflow-y-auto transition-transform -translate-x-full bg-white"
            tabindex="-1" aria-labelledby="drawer-update-product-label" aria-hidden="false"  enctype="multipart/form-data">
     <h5 id="drawer-label"

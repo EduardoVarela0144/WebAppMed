@@ -26,6 +26,6 @@
                 </div>
             </div>
         </div>
-        <div class="getquote_bt"><a href="/doctors">Hacer cita <span><img src="images/right-arrow.png"></span></a></div>
+        <div class="getquote_bt"><a href="doctors">Hacer cita <span><img src="images/right-arrow.png"></span></a></div>
     </div>
 </div>

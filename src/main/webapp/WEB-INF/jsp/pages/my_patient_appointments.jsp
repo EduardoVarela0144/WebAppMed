@@ -39,7 +39,7 @@
                                         <p class="card-text">Horario: ${appointment.hourStart} - ${appointment.hourEnd} </p>
                                         <div class=" flex items-end justify-end">
                                             <button class=" text-white rounded-md">
-                                                <a class="hover:text-white bg-red-500 py-2 px-2" href="/deleteAppointmentPatient/${appointment.id_appointments}">Cancelar cita</a>
+                                                <a class="hover:text-white bg-red-500 py-2 px-2" href="deleteAppointmentPatient/${appointment.id_appointments}">Cancelar cita</a>
                                             </button>
                                         </div>
                                     </div>

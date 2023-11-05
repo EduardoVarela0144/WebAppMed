@@ -156,13 +156,13 @@
 <script>
     function delete_element(idButton) {
         var button = document.getElementById("delete_button_1");
-        button.href = "/deleteUser/" + idButton;
+        button.href = "deleteUser/" + idButton;
     }
     function edit_element(idButton) {
         var button = document.getElementById("delete_button_2");
-        button.href = "/deleteUser/" + idButton;
+        button.href = "deleteUser/" + idButton;
 
-        var url = "/api/users/" + idButton;
+        var url = "api/users/" + idButton;
 
 
 

@@ -49,7 +49,7 @@
                                     </div>
                                     <div class="flex-col  items-center justify-center space-y-4">
                                         <div class="flex">
-                                            <form action="/removeToCart/${cartElement.id_cart_elements}"
+                                            <form action="removeToCart/${cartElement.id_cart_elements}"
                                                   method="post">
                                                 <button type="submit" class="bg-black text-white px-4 py-2">
                                                     -
@@ -61,14 +61,14 @@
                                                         ${cartElement.quantity}
                                                 </p>
                                             </div>
-                                            <form action="/addToCart/${cartElement.id_cart_elements}"
+                                            <form action="addToCart/${cartElement.id_cart_elements}"
                                                   method="post">
                                                 <button type="submit" class="bg-teal-300 text-white px-4 py-2">
                                                     +
                                                 </button>
                                             </form>
                                         </div>
-                                        <form action="/deleteCartProduct/${cartElement.id_cart_elements}"
+                                        <form action="deleteCartProduct/${cartElement.id_cart_elements}"
                                               method="get">
                                             <button type="submit" class="bg-red-500 text-white px-4 py-2 w-full">
                                                 Eliminar

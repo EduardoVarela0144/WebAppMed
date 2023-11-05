@@ -46,7 +46,7 @@
                 <div class="col-md-6" id="register">
 
                     <%--@elvariable id="user" type=""--%>
-                    <form:form action="/signUpSaveUser" method="post" modelAttribute="user">
+                    <form:form action="signUpSaveUser" method="post" modelAttribute="user">
 
                         <div class="contact_box">
                             <h1 class="book_text">Registro</h1>

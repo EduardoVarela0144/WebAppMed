@@ -6,7 +6,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <sec:authorize access="not hasRole('ROLE_PATIENT')">
 
-            <div class="logo"><a href="/"><img src="<%=request.getContextPath()%>/images/logo.png"></a></div>
+            <div class="logo"><a href="<%=request.getContextPath()%>/"><img src="<%=request.getContextPath()%>/images/logo.png"></a></div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">${auth.fullName.substring(0, 1)}</span>
@@ -40,17 +40,17 @@
 
                     <sec:authorize access="hasRole('ROLE_PATIENT')">
                         <li class="nav-item <%= currentURL.endsWith("doctors.jsp") ? "active" : "" %>">
-                            <a class="nav-link" href="/doctors">Doctores</a>
+                            <a class="nav-link" href="doctors">Doctores</a>
                         </li>
                     </sec:authorize>
 
                     <sec:authorize  access="not hasRole('ROLE_ADMIN')">
 
                         <li class="nav-item <%= currentURL.endsWith("medicines.jsp") ? "active" : "" %>">
-                            <a class="nav-link" href="/medicines">Medicinas</a>
+                            <a class="nav-link" href="medicines">Medicinas</a>
                         </li>
                         <li class="nav-item <%= currentURL.endsWith("cart.jsp") ? "active" : "" %>">
-                            <a class="nav-link" href="/user_cart">Carrito</a>
+                            <a class="nav-link" href="user_cart">Carrito</a>
                         </li>
                     </sec:authorize>
 
@@ -59,32 +59,32 @@
 
                 <sec:authorize access="hasRole('ROLE_ADMIN')">
                     <li class="nav-item <%= currentURL.endsWith("dashboard.jsp") ? "active" : "" %>">
-                        <a class="nav-link" href="/dashboard">Dashboard</a>
+                        <a class="nav-link" href="dashboard">Dashboard</a>
                     </li>
                 </sec:authorize>
 
                 <sec:authorize access="!isAuthenticated()">
                     <li class="nav-item <%= currentURL.endsWith("login.jsp") ? "active" : "" %>">
-                        <a class="nav-link" href="/login">Login</a>
+                        <a class="nav-link" href="login">Login</a>
                     </li>
                 </sec:authorize>
 
                 <sec:authorize access="hasRole('ROLE_DOCTOR')">
                     <li class="nav-item <%= currentURL.endsWith("appointments.jsp") ? "active" : "" %>">
-                        <a class="nav-link" href="/appointments">Citas</a>
+                        <a class="nav-link" href="appointments">Citas</a>
                     </li>
                 </sec:authorize>
 
                 <sec:authorize access="hasRole('ROLE_PATIENT')">
                     <li class="nav-item <%= currentURL.endsWith("my_patient_appointments.jsp") ? "active" : "" %>">
-                        <a class="nav-link" href="/my_appointments">Mis citas</a>
+                        <a class="nav-link" href="my_appointments">Mis citas</a>
                     </li>
                 </sec:authorize>
 
                 <sec:authorize access="isAuthenticated()">
 
                     <li class="nav-item <%= currentURL.endsWith("login.jsp") ? "active" : "" %>">
-                        <a class="nav-link" href="/logout">Logout</a>
+                        <a class="nav-link" href="logout">Logout</a>
                     </li>
                 </sec:authorize>
 

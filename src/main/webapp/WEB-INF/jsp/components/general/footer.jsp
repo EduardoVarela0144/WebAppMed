@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-sm-6">
-                <div class="footer_logo"><a href="/"><img src="<%=request.getContextPath()%>/images/footer-logo.png"></a></div>
+                <div class="footer_logo"><a href="<%=request.getContextPath()%>/"><img src="<%=request.getContextPath()%>/images/footer-logo.png"></a></div>
                 <h1 class="adderss_text">Contacto</h1>
                 <div class="map_icon"><img src="<%=request.getContextPath()%>/images/map-icon.png"><span
                         class="paddlin_left_0">Santa Cruz Xoxocotlán</span>
@@ -32,7 +32,7 @@
             <div class="col-lg-3 col-sm-6">
                 <h1 class="adderss_text">Boletín</h1>
                 <input type="text" class="Enter_text" placeholder="Ingresa tu email" name="Enter your Emil">
-                <div class="subscribe_bt"><a href="/signUp">Suscribirme</a></div>
+                <div class="subscribe_bt"><a href="<%=request.getContextPath()%>/signUp">Suscribirme</a></div>
                 <div class="social_icon">
                     <ul>
                         <li><a href="#"><img src="<%=request.getContextPath()%>/images/fb-icon.png"></a></li>

@@ -4,7 +4,7 @@
 
 <%
     String user = request.getParameter("User");
-    String url = "/completeDoctorAccount/" + user ;
+    String url = "completeDoctorAccount/" + user ;
 %>
 
 <h2 class="font-bold text-2xl mb-12">Terminar registro como doctor</h2>

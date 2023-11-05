@@ -24,7 +24,7 @@
             </div>
             <!-- Modal body -->
             <%--@elvariable id="doctor" type=""--%>
-            <form:form action="/saveDoctor?page=doctors" method="post" modelAttribute="doctor">
+            <form:form action="saveDoctor?page=doctors" method="post" modelAttribute="doctor">
                 <div class="grid gap-4 mb-4 sm:grid-cols-2">
                     <div>
                         <label for="clinic_address" class="block mb-2 text-sm font-medium text-gray-900 ">Dirección de la clínica</label>

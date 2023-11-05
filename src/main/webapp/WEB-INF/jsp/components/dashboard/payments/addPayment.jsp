@@ -24,7 +24,7 @@
             </div>
             <!-- Modal body -->
             <%--@elvariable id="payment" type=""--%>
-            <form:form action="/saveAppointmentPayment?page=payments" method="post" modelAttribute="payment">
+            <form:form action="saveAppointmentPayment?page=payments" method="post" modelAttribute="payment">
                 <div class="grid gap-4 mb-4 sm:grid-cols-2">
 
                     <div>

@@ -35,7 +35,7 @@
         </div>
     </div>
     <div class="flex flex-row justify-between items-center  flex-col flex-1 h-1/3">
-        <a href="/doctor/<%=id%> "
+        <a href="doctor/<%=id%> "
            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center hover:text-white text-white bg-teal-300 rounded-lg hover:bg-teal-400 focus:ring-4 focus:outline-none focus:ring-teal-300 my-4">
             Agendar cita
             <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"

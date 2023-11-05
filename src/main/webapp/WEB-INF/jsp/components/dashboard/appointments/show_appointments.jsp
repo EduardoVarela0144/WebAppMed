@@ -133,14 +133,14 @@
 <script>
     function delete_element(idButton) {
         var button = document.getElementById("delete_button_1");
-        button.href = "/deleteAppointment/" + idButton;
+        button.href = "deleteAppointment/" + idButton;
     }
 
     function edit_element(idButton) {
         var button = document.getElementById("delete_button_2");
-        button.href = "/deleteAppointment/" + idButton;
+        button.href = "deleteAppointment/" + idButton;
 
-        var url = "/api/appointments/" + idButton;
+        var url = "api/appointments/" + idButton;
 
         $.ajax({
             type: "GET",

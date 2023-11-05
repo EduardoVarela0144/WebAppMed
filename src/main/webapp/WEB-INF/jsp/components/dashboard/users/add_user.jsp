@@ -24,7 +24,7 @@
             </div>
             <!-- Modal body -->
             <%--@elvariable id="user" type=""--%>
-            <form:form action="/saveUser?page=users" method="post" modelAttribute="user"
+            <form:form action="saveUser?page=users" method="post" modelAttribute="user"
                        onsubmit="return validateForm()">
                 <div class="grid gap-4 mb-4 sm:grid-cols-2">
                     <div>
