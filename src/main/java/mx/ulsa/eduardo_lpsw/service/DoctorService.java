@@ -71,7 +71,10 @@ public class DoctorService {
                 appointmentRepository.deleteById(appointments.getId_appointments());
 
             }
-            userRepository.deleteById(user.getId_user());
+            if(user!= null){
+                userRepository.deleteById(user.getId_user());
+
+            }
             doctorRepo.deleteById(doctor.getId_doctor());
             return true;
         }
