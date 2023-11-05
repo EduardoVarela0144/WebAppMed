@@ -6,7 +6,7 @@
 
 <nav class="fixed top-0 z-10 w-full bg-white border-b border-gray-200">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="home" class="flex items-center">
+        <a href="/eduardo_lpsw-1/home" class="flex items-center">
             <img src="<%=request.getContextPath()%>/images/logo.png">
 
         </a>
