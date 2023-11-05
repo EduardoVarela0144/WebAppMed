@@ -5,7 +5,6 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="ISO-8859-1">
     <title>Pacientes</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <jsp:include page="../../../components/general/template_styles.jsp"/>

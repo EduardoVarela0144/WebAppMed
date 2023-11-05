@@ -1,13 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
 
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Inicio de sesión</title>
+    <title>Inicio de sesiï¿½n</title>
     <jsp:include page="../components/general/template_styles.jsp"/>
 </head>
 <body>
@@ -30,14 +30,14 @@
 
             <div class="col-md-12" id="login">
                 <div class="contact_box">
-                    <h1 class="book_text">Inicio de sesión</h1>
+                    <h1 class="book_text">Inicio de sesiï¿½n</h1>
                     <form:form action="login" method="post">
-                        <input class="Email_text" type="email" name="username" placeholder="Correo electrónico" required>
-                        <input class="Email_text" type="password" name="password" placeholder="Contraseña" required>
+                        <input class="Email_text" type="email" name="username" placeholder="Correo electrï¿½nico" required>
+                        <input class="Email_text" type="password" name="password" placeholder="Contraseï¿½a" required>
                         <div class="send_bt">
                             <a style="color: white; width: 100%; height: 100%">
                                 <button style="background-color: transparent; color: white; width: 100%; height: 100%"
-                                        type="submit">Iniciar sesión
+                                        type="submit">Iniciar sesiï¿½n
                                 </button>
                             </a>
                         </div>
