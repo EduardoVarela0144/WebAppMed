@@ -28,8 +28,8 @@
                     <p>Nombre del doctor: ${doctor.name}</p>
                     <p>Apellido Paterno: ${doctor.ape_pat}</p>
                     <p>Apellido Materno: ${doctor.ape_mat}</p>
-                    <p>Dirección de la clínica: ${doctor.id_doctor.clinic_address}</p>
-                    <p>Número de la clínica: ${doctor.id_doctor.clinic_number}</p>
+                    <p>Direcci&oacuten de la cl&iacutenica: ${doctor.id_doctor.clinic_address}</p>
+                    <p>N&uacutemero de la cl&iacutenica: ${doctor.id_doctor.clinic_number}</p>
                     <p>Especialidad: ${doctor.id_doctor.specialties.name}</p>
                     <p>Costo de la consulta: ${doctor.id_doctor.cost}</p>
                 </div>

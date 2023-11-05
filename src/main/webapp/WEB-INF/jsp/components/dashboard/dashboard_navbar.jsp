@@ -44,7 +44,7 @@
                 </div>
                 <ul class="py-2" aria-labelledby="user-menu-button">
                     <li>
-                        <a href="logout"
+                        <a href="eduardo_lpsw-1/logout"
                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-500 ">Cerrar sesión</a>
                     </li>
 
