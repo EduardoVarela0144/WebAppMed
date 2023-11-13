@@ -90,7 +90,7 @@
                             <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">
                                 <div class="flex items-center mr-3 max-w-xs overflow-hidden">
                                     <div class="truncate">
-                                        <img src="<%=request.getContextPath()%>/images/${product.url_image}" width="50" height="50" />
+                                        <img src="${product.url_image}" width="50" height="50" />
                                     </div>
                                 </div>
                             </th>
@@ -159,7 +159,7 @@
             dataType: "json",
             success: function(data) {
                  var image = document.getElementById("image");
-                 image.src = "<%=request.getContextPath()%>/images/" + data.url_image;
+                 image.src =  data.url_image;
                 document.getElementById("id_product").value = data.id_product;
                 document.getElementById("edit_description").value = data.description;
                 document.getElementById("edit_price").value = data.price;

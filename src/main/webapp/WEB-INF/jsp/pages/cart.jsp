@@ -36,7 +36,7 @@
                                 <div class="card-body flex flex-row justify-between">
                                     <div class=" flex-row flex space-x-4">
                                         <div>
-                                            <img src="<%=request.getContextPath()%>/images/${cartElement.id_product.url_image}"
+                                            <img src="${cartElement.id_product.url_image}"
                                                  class="w-24 h-24" alt="${cartElement.id_product.name}">
                                         </div>
                                         <div>

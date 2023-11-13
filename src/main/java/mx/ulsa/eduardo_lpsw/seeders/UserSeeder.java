@@ -2,6 +2,7 @@ package mx.ulsa.eduardo_lpsw.seeders;
 
 import mx.ulsa.eduardo_lpsw.models.*;
 import mx.ulsa.eduardo_lpsw.repository.*;
+import mx.ulsa.eduardo_lpsw.service.ImageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -23,6 +24,9 @@ public class UserSeeder implements ApplicationRunner {
     IPatientRepository patientRepository;
     @Autowired
     IProductRepository productRepository;
+    @Autowired
+    IPathImageRepository pathImageRepository;
+
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
@@ -150,26 +154,34 @@ public class UserSeeder implements ApplicationRunner {
         user_patient1.setPassword(hashedPassword11);
         userRepo.save(user_patient1);
 
-        Product medicamento1 = new Product(1, "Aspirina", "Analgésico para el alivio del dolor", 5.99f, 10, "aspirina.webp");
+
+        Product medicamento1 = new Product(1, "Aspirina", "Analgésico para el alivio del dolor", 5.99f, 10, "https://res-console.cloudinary.com/dx2kgjjmf/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/bWVkaWNpbmVzL2xqaHB2aXdpaXJuMzlpbnRrYzZy/template_primary");
         productRepository.save(medicamento1);
-        Product medicamento2 = new Product(2, "Ibuprofeno", "Antiinflamatorio y analgésico", 6.99f, 10, "ibuprofeno.webp");
+        Product medicamento2 = new Product(2, "Ibuprofeno", "Antiinflamatorio y analgésico", 6.99f, 10, "https://res-console.cloudinary.com/dx2kgjjmf/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/bWVkaWNpbmVzL3lkbzg3cGtoYnBwcW96NGlvOGg2/template_primary");
         productRepository.save(medicamento2);
-        Product medicamento3 = new Product(3, "Paracetamol", "Alivio de fiebre y dolor", 4.49f, 10, "paracetamol.jpeg");
+        Product medicamento3 = new Product(3, "Paracetamol", "Alivio de fiebre y dolor", 4.49f, 10, "https://res-console.cloudinary.com/dx2kgjjmf/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/bWVkaWNpbmVzL2tnY3FpMmV6OGlkeGh5a3lldXlt/template_primary");
         productRepository.save(medicamento3);
-        Product medicamento4 = new Product(4, "Omeprazol", "Antiácido para problemas gástricos", 7.29f, 10, "omeprazol.webp");
+        Product medicamento4 = new Product(4, "Omeprazol", "Antiácido para problemas gástricos", 7.29f, 10, "https://res-console.cloudinary.com/dx2kgjjmf/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/bWVkaWNpbmVzL3U2dG5jMzlybzU2ZGhibDY3bXlq/template_primary");
         productRepository.save(medicamento4);
-        Product medicamento5 = new Product(5, "Amoxicilina", "Antibiótico de amplio espectro", 9.99f, 10, "amoxicilina.jpeg");
+        Product medicamento5 = new Product(5, "Amoxicilina", "Antibiótico de amplio espectro", 9.99f, 10, "https://res-console.cloudinary.com/dx2kgjjmf/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/bWVkaWNpbmVzL2dsam55Y216cGRpdHRrN2FmcXpu/template_primary");
         productRepository.save(medicamento5);
-        Product medicamento6 = new Product(6, "Loratadina", "Antihistamínico para alergias", 8.49f, 10, "loratadina.webp");
+        Product medicamento6 = new Product(6, "Loratadina", "Antihistamínico para alergias", 8.49f, 10, "https://res-console.cloudinary.com/dx2kgjjmf/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/bWVkaWNpbmVzL29saHBmcnZ5dWdndWJmZGs0amcx/template_primary");
         productRepository.save(medicamento6);
-        Product medicamento7 = new Product(7, "Cetirizina", "Antihistamínico para alergias", 7.99f, 10, "cetirizina.png");
+        Product medicamento7 = new Product(7, "Cetirizina", "Antihistamínico para alergias", 7.99f, 10, "https://res-console.cloudinary.com/dx2kgjjmf/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/bWVkaWNpbmVzL2VvZTd4d2JndnlheG1qaDN2bG00/template_primary");
         productRepository.save(medicamento7);
-        Product medicamento8 = new Product(8, "Salbutamol", "Broncodilatador para el asma", 10.49f, 10, "salbutamol.jpeg");
+        Product medicamento8 = new Product(8, "Salbutamol", "Broncodilatador para el asma", 10.49f, 10, "https://res-console.cloudinary.com/dx2kgjjmf/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/bWVkaWNpbmVzL2t1Z3BmZHB6anA5Mm5hcndhOWFs/template_primary");
         productRepository.save(medicamento8);
-        Product medicamento9 = new Product(9, "Vitamina C", "Suplemento vitamínico", 3.99f, 10, "redoxon.webp");
+        Product medicamento9 = new Product(9, "Vitamina C", "Suplemento vitamínico", 3.99f, 10, "https://res-console.cloudinary.com/dx2kgjjmf/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/bWVkaWNpbmVzL3JneDl0Z2ZnYWZlbnpua3BqYXls/template_primary");
         productRepository.save(medicamento9);
-        Product medicamento10 = new Product(10, "Diazepam", "Ansiolítico y sedante", 12.99f, 10, "diazepam.webp");
+        Product medicamento10 = new Product(10, "Diazepam", "Ansiolítico y sedante", 12.99f, 10, "https://res-console.cloudinary.com/dx2kgjjmf/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/bWVkaWNpbmVzL2JqcXUzeXRwYmV5cGlyNGN1bXZq/template_primary");
         productRepository.save(medicamento10);
+
+        // Create path
+        PathImages path = new PathImages(1,"/opt/homebrew/etc/tomcat/webapps/images");
+        pathImageRepository.save(path);
+
+        //ImageService.UPLOAD_DIR = path.getPath_image();
+
 
 
     }

@@ -24,6 +24,7 @@ public class RestControllers {
     private final CartService cartService;
     private final CartProductService cartProductService;
     private final ProductService productService;
+    private final PathImageService pathImageService;
 
 
     public
@@ -37,7 +38,8 @@ public class RestControllers {
             AppointmentPaymentService appointmentPaymentService,
             CartService cartService,
             CartProductService cartProductService,
-            ProductService productService
+            ProductService productService,
+            PathImageService pathImageService
     ) {
         this.specialityService = specialityService;
         this.patientService = patientService;
@@ -49,6 +51,7 @@ public class RestControllers {
         this.cartService = cartService;
         this.cartProductService = cartProductService;
         this.productService = productService;
+        this.pathImageService = pathImageService;
     }
 
     @GetMapping("/specialties/{id}")
@@ -106,5 +109,9 @@ public class RestControllers {
         return cartProductService.getCartProductById(id);
     }
 
+    @GetMapping("/path/{id}")
+    public PathImages getPathImage(@PathVariable Integer id) {
+        return pathImageService.getPathById(id);
+    }
 
 }

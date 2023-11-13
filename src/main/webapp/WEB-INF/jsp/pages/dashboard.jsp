@@ -40,6 +40,8 @@
             <jsp:include page="../components/dashboard/users/main.jsp"/>
             <% } else if ("products".equals(componente)) { %>
             <jsp:include page="../components/dashboard/medicines/main.jsp"/>
+            <% } else if ("path".equals(componente)) { %>
+            <jsp:include page="../components/dashboard/path/main.jsp"/>
             <% } else { %>
             <jsp:include page="../components/dashboard/dashboard_welcome.jsp"/>
             <% } %>

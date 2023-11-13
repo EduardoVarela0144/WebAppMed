@@ -1,26 +1,54 @@
 package mx.ulsa.eduardo_lpsw.service;
 
+import com.cloudinary.Cloudinary;
+import com.cloudinary.utils.ObjectUtils;
 import mx.ulsa.eduardo_lpsw.models.Image;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class ImageService {
-    private static final String UPLOAD_DIR = "src/main/webapp/images/";
+
+    public  static  String UPLOAD_DIR = "/opt/homebrew/etc/tomcat/webapps/";
 
 
-    public void guardarImagen(MultipartFile file) throws IOException {
+    public ImageService() {
+    }
+
+    private static final String CLOUD_NAME = "dx2kgjjmf";
+    private static final String API_KEY = "697595945272171";
+    private static final String API_SECRET = "WrVSbjorHuscT_uCeJlXDbHulpI";
+
+    private static final String CLOUDINARY_FOLDER = "medicines/";
+
+
+    public String guardarImagen(MultipartFile file) throws IOException {
+        //byte[] bytes = file.getBytes();
+        //Path path = Paths.get(UPLOAD_DIR + file.getOriginalFilename());
+        //Files.write(path, bytes);
+
         byte[] bytes = file.getBytes();
-        Path path = Paths.get(UPLOAD_DIR + file.getOriginalFilename());
-        Files.write(path, bytes);
+
+        Cloudinary cloudinary = new Cloudinary(ObjectUtils.asMap(
+                "cloud_name", CLOUD_NAME,
+                "api_key", API_KEY,
+                "api_secret", API_SECRET
+                ));
+
+        Map uploadResult = cloudinary.uploader().upload(bytes, ObjectUtils.asMap(
+                "folder", CLOUDINARY_FOLDER
+        ));
+
+        String imageUrl = (String) uploadResult.get("secure_url");
+
+        return imageUrl;
+
     }
 
     public List<Image> getAllImages() {

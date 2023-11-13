@@ -27,11 +27,10 @@ public class ProductController {
     public String saveProduct(@RequestParam("file") MultipartFile file, Product Product, RedirectAttributes redirectAttributes) throws IOException {
 
         if(!file.isEmpty()){
-            imageService.guardarImagen(file);
-            Product.setUrl_image(file.getOriginalFilename());
+            String url = imageService.guardarImagen(file);
+            //Product.setUrl_image(file.getOriginalFilename());
+            Product.setUrl_image((url));
         }
-
-
 
         if(productService.saveOrUpdateProduct(Product)){
             redirectAttributes.addFlashAttribute("message", "Registro exitoso");

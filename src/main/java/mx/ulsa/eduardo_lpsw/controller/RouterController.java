@@ -38,6 +38,8 @@ public class RouterController {
     CartService cartService;
     @Autowired
     CartProductService cartProductService;
+    @Autowired
+    PathImageService pathImageService;
 
 
 
@@ -143,6 +145,9 @@ public class RouterController {
         model.addAttribute("appointment", new Appointments());
         model.addAttribute("product", new Product());
         model.addAttribute("payment", new Payments());
+        model.addAttribute("pathImage", new PathImages());
+
+
 
         List<String> weekDays = Arrays.asList("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo");
         model.addAttribute("weekDays", weekDays);
@@ -156,6 +161,8 @@ public class RouterController {
         model.addAttribute("listAppointments",appointmentService.getAllAppointments());
         model.addAttribute("listProducts",productService.getAllProducts());
         model.addAttribute("listPaymentsAppointments", appointmentPaymentService.getAllAppointmentsPayments());
+        model.addAttribute("listPaths",pathImageService.getAllPathImage());
+
 
         model.addAttribute("auth", customUserDetails);
 

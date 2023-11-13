@@ -14,7 +14,7 @@
 <%--@elvariable id="product" type=""--%>
 <form:form action="saveCartProduct" method="post" modelAttribute="product">
     <div class="card  w-full">
-        <img src="<%=request.getContextPath()%>/images/<%= url_image %>" class="card-img-top" alt="<%= name %>">
+        <img src="<%= url_image %>" class="card-img-top" alt="<%= name %>">
         <div class="card-body">
             <h5 class="card-title"><%= name %></h5>
             <p class="card-text"><%= description %></p>
