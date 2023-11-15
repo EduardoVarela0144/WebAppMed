@@ -21,7 +21,7 @@ public class Product {
     @Column(name = "stock")
     private Integer stock;
 
-    @Column(name = "url_image", nullable = true, length = 1024)
+    @Column(name = "url_image", nullable = true, length = 2048)
     private String url_image;
 
     public Product(Integer id_product, String name, String description, Float price, Integer stock, String url_image) {

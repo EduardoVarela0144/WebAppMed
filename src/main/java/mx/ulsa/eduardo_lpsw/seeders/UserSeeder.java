@@ -155,25 +155,25 @@ public class UserSeeder implements ApplicationRunner {
         userRepo.save(user_patient1);
 
 
-        Product medicamento1 = new Product(1, "Aspirina", "Analgésico para el alivio del dolor", 5.99f, 10, "https://res-console.cloudinary.com/dx2kgjjmf/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/bWVkaWNpbmVzL2xqaHB2aXdpaXJuMzlpbnRrYzZy/template_primary");
+        Product medicamento1 = new Product(1, "Aspirina", "buen medicamento", 6.99f, 10,"https://res.cloudinary.com/dx2kgjjmf/image/upload/v1699889649/medicines/ljhpviwiirn39intkc6r.webp");
         productRepository.save(medicamento1);
-        Product medicamento2 = new Product(2, "Ibuprofeno", "Antiinflamatorio y analgésico", 6.99f, 10, "https://res-console.cloudinary.com/dx2kgjjmf/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/bWVkaWNpbmVzL3lkbzg3cGtoYnBwcW96NGlvOGg2/template_primary");
+        Product medicamento2 = new Product(2, "Ibuprofeno", "Antiinflamatorio y analgésico", 6.99f, 10, "https://res.cloudinary.com/dx2kgjjmf/image/upload/v1699889650/medicines/ydo87pkhbppqoz4io8h6.webp");
         productRepository.save(medicamento2);
-        Product medicamento3 = new Product(3, "Paracetamol", "Alivio de fiebre y dolor", 4.49f, 10, "https://res-console.cloudinary.com/dx2kgjjmf/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/bWVkaWNpbmVzL2tnY3FpMmV6OGlkeGh5a3lldXlt/template_primary");
+        Product medicamento3 = new Product(3, "Paracetamol", "Alivio de fiebre y dolor", 4.49f, 10, "https://res.cloudinary.com/dx2kgjjmf/image/upload/v1699889649/medicines/kgcqi2ez8idxhykyeuym.jpg");
         productRepository.save(medicamento3);
-        Product medicamento4 = new Product(4, "Omeprazol", "Antiácido para problemas gástricos", 7.29f, 10, "https://res-console.cloudinary.com/dx2kgjjmf/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/bWVkaWNpbmVzL3U2dG5jMzlybzU2ZGhibDY3bXlq/template_primary");
+        Product medicamento4 = new Product(4, "Omeprazol", "Antiácido para problemas gástricos", 7.29f, 10, "https://res.cloudinary.com/dx2kgjjmf/image/upload/v1699889649/medicines/u6tnc39ro56dhbl67myj.webp");
         productRepository.save(medicamento4);
-        Product medicamento5 = new Product(5, "Amoxicilina", "Antibiótico de amplio espectro", 9.99f, 10, "https://res-console.cloudinary.com/dx2kgjjmf/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/bWVkaWNpbmVzL2dsam55Y216cGRpdHRrN2FmcXpu/template_primary");
+        Product medicamento5 = new Product(5, "Amoxicilina", "Antibiótico de amplio espectro", 9.99f, 10, "https://res.cloudinary.com/dx2kgjjmf/image/upload/v1699889649/medicines/gljnycmzpdittk7afqzn.jpg");
         productRepository.save(medicamento5);
-        Product medicamento6 = new Product(6, "Loratadina", "Antihistamínico para alergias", 8.49f, 10, "https://res-console.cloudinary.com/dx2kgjjmf/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/bWVkaWNpbmVzL29saHBmcnZ5dWdndWJmZGs0amcx/template_primary");
+        Product medicamento6 = new Product(6, "Loratadina", "Antihistamínico para alergias", 8.49f, 10, "https://res.cloudinary.com/dx2kgjjmf/image/upload/v1699889650/medicines/olhpfrvyuggubfdk4jg1.webp");
         productRepository.save(medicamento6);
-        Product medicamento7 = new Product(7, "Cetirizina", "Antihistamínico para alergias", 7.99f, 10, "https://res-console.cloudinary.com/dx2kgjjmf/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/bWVkaWNpbmVzL2VvZTd4d2JndnlheG1qaDN2bG00/template_primary");
+        Product medicamento7 = new Product(7, "Cetirizina", "Antihistamínico para alergias", 7.99f, 10, "https://res.cloudinary.com/dx2kgjjmf/image/upload/v1699889649/medicines/eoe7xwbgvyaxmjh3vlm4.png");
         productRepository.save(medicamento7);
-        Product medicamento8 = new Product(8, "Salbutamol", "Broncodilatador para el asma", 10.49f, 10, "https://res-console.cloudinary.com/dx2kgjjmf/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/bWVkaWNpbmVzL2t1Z3BmZHB6anA5Mm5hcndhOWFs/template_primary");
+        Product medicamento8 = new Product(8, "Salbutamol", "Broncodilatador para el asma", 10.49f, 10, "https://res.cloudinary.com/dx2kgjjmf/image/upload/v1699889650/medicines/kugpfdpzjp92narwa9al.jpg");
         productRepository.save(medicamento8);
-        Product medicamento9 = new Product(9, "Vitamina C", "Suplemento vitamínico", 3.99f, 10, "https://res-console.cloudinary.com/dx2kgjjmf/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/bWVkaWNpbmVzL3JneDl0Z2ZnYWZlbnpua3BqYXls/template_primary");
+        Product medicamento9 = new Product(9, "Vitamina C", "Suplemento vitamínico", 3.99f, 10, "https://res.cloudinary.com/dx2kgjjmf/image/upload/v1699889649/medicines/rgx9tgfgafenznkpjayl.webp");
         productRepository.save(medicamento9);
-        Product medicamento10 = new Product(10, "Diazepam", "Ansiolítico y sedante", 12.99f, 10, "https://res-console.cloudinary.com/dx2kgjjmf/thumbnails/transform/v1/image/upload/Yl9hdXRvOnByZWRvbWluYW50LGNfcGFkLGhfMzAwLHdfMzAwLGZfanBnLGZsX2xvc3N5LmFueV9mb3JtYXQucHJlc2VydmVfdHJhbnNwYXJlbmN5LnByb2dyZXNzaXZl/v1/bWVkaWNpbmVzL2JqcXUzeXRwYmV5cGlyNGN1bXZq/template_primary");
+        Product medicamento10 = new Product(10, "Diazepam", "Ansiolítico y sedante", 12.99f, 10, "https://res.cloudinary.com/dx2kgjjmf/image/upload/v1699889649/medicines/bjqu3ytpbeypir4cumvj.webp");
         productRepository.save(medicamento10);
 
         // Create path
