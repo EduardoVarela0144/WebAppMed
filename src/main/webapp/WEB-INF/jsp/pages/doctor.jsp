@@ -47,7 +47,7 @@
                                 <c:forEach var="schedule" items="${listSchedules}" >
 
                                     <%--@elvariable id="appointment" type=""--%>
-                                    <form:form class="col-md-4" action="/eduardo_lpsw-1/saveAppointmentFromClient" method="post" modelAttribute="appointment">
+                                    <form:form class="col-md-4" action="/saveAppointmentFromClient" method="post" modelAttribute="appointment">
                                             <div class="card mb-4">
                                                     <div class="card-body">
                                                         <form:hidden path="id_doctor"  value="${doctor.id_user}" />
